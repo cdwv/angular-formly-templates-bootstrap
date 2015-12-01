@@ -10,7 +10,7 @@ export default ngModule => {
           '<p id="' + scope.id + '_description"' +
           'class="help-block"' +
           'ng-if="to.description">' +
-          '{{to.description}}' +
+          '[[to.description]]' +
           '</p>'
         )[0]);
         var modelEls = angular.element(el.querySelectorAll('[ng-model]'));
